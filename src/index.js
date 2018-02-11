@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -21,9 +20,6 @@ const App = () => {
   )
 };
 
-App.propTypes = {
-  basename: PropTypes.string.isRequired
-}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
