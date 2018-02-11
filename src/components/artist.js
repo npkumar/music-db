@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './header';
+import AlbumList from './albumList';
 
 const URL = 'http://localhost:3004/artists';
 
@@ -29,6 +30,7 @@ class Artist extends Component {
     return (
       <div>
         <Header />
+
         <div className="artist-bio">
           <div className="avatar">
             <span 
@@ -42,6 +44,8 @@ class Artist extends Component {
             </div>
           </div>
         </div>
+
+        <AlbumList albumList={artist.albums} />
       </div>
     )
   }
